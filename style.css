@@ -7,6 +7,7 @@
 @import url(components/footer.css);
 @import url(components/banner.css);
 @import url(components/info.css);
+@import url(components/blog.css)
 /* Utilities */
 body {
   font-family: Public Sans;
