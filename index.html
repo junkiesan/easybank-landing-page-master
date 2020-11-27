@@ -7,29 +7,37 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Easybank landing page</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dist/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
-  <script src="app.js"></script>
 </head>
 <body>
-  <div class="navbar">
-    <img src="images/logo.svg" alt="easybank logo">
-    <div class="grp">
-      <a href="">Home</a>
-      <a href="">About</a>
-      <a href="">Contact</a>
-      <a href="">Blog</a>
-      <a href="">Careers</a>
-    </div> 
-    <div class="button">
-      Request Invite
-    </div>
+  <header class="header">
+    <nav class="flex flex-jc-sb">
+    <a href="/" class="logo">
+      <img src="images/logo.svg" alt="easybank logo">
+    </a>
+    <a href="#" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+        <ul class="menu">
+          <li> <a href="#">Home</a> </li>
+          <li> <a href="#">About</a> </li>
+          <li> <a href="#">Contact</a> </li>
+          <li> <a href="#">Blog</a> </li>
+          <li> <a href="#">Careers</a> </li>
+        </ul>
+      <a href="" class="button">Request Invite</a>
+    </nav>
+  </header>
   </div>
-
   <div class="banner">
     <div class="info">
       <h1>Next generation digital banking</h1>
@@ -137,5 +145,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded w/ ❤️ by <a href="https://www.julienbouland.com">Junkiesan</a>.
   </div>
+  <script src="/app/js/script.js"></script>
 </body>
 </html>
