@@ -3,26 +3,32 @@
   //  Hamburger Open styles
   &.open {
 
-    > span:first-child {
-      transform: rotate(45deg);
+    .overlay {
+      display: block;
     }
+    .header__menu {
 
-    > span:nth-child(2) {
-      opacity: 0;
-    }
-
-    > span:last-child {
-      transform: rotate(-45deg);
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+  
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+  
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
     }
   }
-  
+
   .overlay{
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: $darkBlue;
     background-image:linear-gradient($darkBlue, transparent);
   }
 
